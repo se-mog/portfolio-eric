@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 body {
     background: #080808;
     color: #efefef;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .apresentacao {
@@ -47,11 +48,63 @@ body {
     font-size: 1.2rem;
 }
 
-.cartoes__titulo {
+.certificados {
+    padding: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10em;
+}
+
+
+
+.swiper {
+    width: 400px;
+    height: 450px;
+    margin: 0;
+  }
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    background-color: #130003;
+    border-radius: 1em;
+    border: 0.2px solid #efefef;
+    
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.curso {
+    margin-top: 1.5em;
+    color: #efefef;
+    font-size: 2.5em;
+    font-weight: 600;
+
+    transition: 1s;
+}
+
+.curso:hover{
+    transform: scale(1.1);
+}
+
+.slide-img {
+    margin-bottom: 2em;
+}
+
+.titulo-secundario {
     text-align: center;   
     margin: 70px 0;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 3em;
+}
+
+.titulo__texto {
+    font-size: 4em;
 }
 
 .cartoes__lista {
@@ -72,7 +125,7 @@ body {
     overflow: hidden;
     border: 1.5px solid #efefef;
 
-    transition: 0.5s ease;
+    transition: 3s ease;
 }
 
 .cartao:hover {
@@ -134,4 +187,9 @@ body {
 .cartao__container-botao:hover {
     margin-top: -10px;
     font-size: 22px;
+}
+
+.rodape {
+    padding: 4em 0 2em;
+    text-align: center;
 }
