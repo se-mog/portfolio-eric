@@ -7,6 +7,7 @@
     <title>Portfólio Eric Gomes</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,38 +25,46 @@
         </div>
     </section>
 
-    <article class="cartoes">
-        <h2 class="cartoes__titulo">Meus projetos</h2>
+    <section class="certificados">
+        <div class="certificados__titulo">
+            <h2 class="titulo__texto titulo-secundario">Meus<br>certificados<br>→</h2>
+        </div>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="curso" href="https://cursos.alura.com.br/degree/certificate/97c907fb-6758-4f4e-9cdf-9efcdd273aed">Formação JavaScript</a>
+                    <img class="slide-img" src="assets/img/JavaScript frameworks-rafiki.svg" alt="programador javascript">
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="curso" href="https://cursos.alura.com.br/degree/certificate/55d6b555-d687-4389-b821-ddba42d20de0">Formação HTML e CSS</a>
+                    <img class="slide-img" src="assets/img/Content structure-amico.svg" alt="programadores web">
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="curso" href="https://cursos.alura.com.br/degree/certificate/a8306033-7046-463a-a895-835f2c802239ss">Formação Fron-end</a>
+                    <img class="slide-img" src="assets/img/Code typing-bro.svg" alt="escrevendo um código">
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="curso" href="#">Formação TypeScript</a>
+                    <img class="slide-img" src="assets/img/Code review-pana.svg" alt="programadora">
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="curso" href="#">Formação React</a>
+                    <img class="slide-img" src="assets/img/Developer activity-amico.svg" alt="programadora javascript">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cartoes">
+        <h2 class="cartoes__titulo titulo-secundario">Meus projetos</h2>
         <ul class="cartoes__lista">
-            <li class="cartoes__item cartao">
-                <div class="cartao__container-imagem">
-                    <img src="assets/img/Calculator-amico.svg" class="cartao__imagem">
-                </div>
-                
-                <div class="cartao__container-textos">
-                    <h2 class="cartao__titulo">Calculadora</h2>
-                    <p class="cartao__descricao">Faça alguns cálculos com esta calculadora desenvolvida com JavaScript, estruturada e estilizada com HTML e CSS.</p>
-                </div>
-
-                <div class="cartao__container-botao">
-                    <a href="calculadora/calculadora.html" class="cartao__botao">Explore</a>
-                </div>
-            </li>
-
-            <li class="cartoes__item cartao">
-                <div class="cartao__container-imagem">
-                    <img src="assets/img/compositor-rafiki.svg" class="cartao__imagem">
-                </div>
-
-                <div class="cartao__container-textos">
-                    <h2 class="cartao__titulo">Mesa de som</h2>
-                    <p class="cartao__descricao">Experimente criar um beat novo com esta ferramenta desenvolvida com JavaScript, estruturada e estilizada com HTML e CSS.</p>
-                </div>
-                
-                <div class="cartao__container-botao">
-                    <a href="#" class="cartao__botao">Explore</a>
-                </div>
-            </li>
 
             <li class="cartoes__item cartao">
                 <div class="cartao__container-imagem">
@@ -64,11 +73,11 @@
 
                 <div class="cartao__container-textos">
                     <h2 class="cartao__titulo">eCommerce</h2>
-                    <p class="cartao__descricao">Use o sistema de busca inteligente desta loja para encontrar rápidamente o que procura.</p>
+                    <p class="cartao__descricao">Uma livraria online altamente responsiva e programada com o conceito de mobile first.</p>
                 </div>
                     
                 <div class="cartao__container-botao">
-                    <a href="#" class="cartao__botao">Explore</a>
+                    <a href="pages/alurabook/index.html" class="cartao__botao">Explore</a>
                 </div>
             </li>
 
@@ -83,19 +92,70 @@
                 </div>
 
                 <div class="cartao__container-botao">
-                    <a href="alura_plus/alura_plus.html" class="cartao__botao">Explore</a>
+                    <a href="pages/alura_plus/alura_plus.html" class="cartao__botao">Explore</a>
+                </div>
+            </li>
+
+            <li class="cartoes__item cartao">
+                <div class="cartao__container-imagem">
+                    <img src="assets/img/Forms-bro.svg" class="cartao__imagem">
+                </div>
+                
+                <div class="cartao__container-textos">
+                    <h2 class="cartao__titulo">Formulário</h2>
+                    <p class="cartao__descricao">Preencha os campos do formulário corretamente para agendar a visita do seu pet ao petshop.</p>
+                </div>
+
+                <div class="cartao__container-botao">
+                    <a href="pages/petshop/cadastro.html" class="cartao__botao">Explore</a>
+                </div>
+            </li>
+                
+            <li class="cartoes__item cartao">
+                <div class="cartao__container-imagem">
+                    <img src="assets/img/compositor-rafiki.svg" class="cartao__imagem">
+                </div>
+
+                <div class="cartao__container-textos">
+                    <h2 class="cartao__titulo">Mesa de som</h2>
+                    <p class="cartao__descricao">Experimente criar um beat novo com esta ferramenta desenvolvida com JavaScript, estruturada e estilizada com HTML e CSS.</p>
+                </div>
+                
+                <div class="cartao__container-botao">
+                    <a href="pages/mesa_de_som/index.html" class="cartao__botao">Explore</a>
+                </div>
+            </li>
+
+            <li class="cartoes__item cartao">
+                <div class="cartao__container-imagem">
+                    <img src="assets/img/Calculator-amico.svg" class="cartao__imagem">
+                </div>
+                
+                <div class="cartao__container-textos">
+                    <h2 class="cartao__titulo">Calculadora</h2>
+                    <p class="cartao__descricao">Faça alguns cálculos com esta calculadora desenvolvida com JavaScript, estruturada e estilizada com HTML e CSS.</p>
+                </div>
+
+                <div class="cartao__container-botao">
+                    <a href="pages/calculadora/calculadora.html" class="cartao__botao">Explore</a>
                 </div>
             </li>
         </ul>
+    </section>
 
-    </article>
+    <footer class="rodape"><p class="rodape__texto">Feito com dedicação por Eric Gomes ⭐</p></footer>
 
 
-a
-<br>
-a
-<br>
-a
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'cards',
+            loop: true,
+            cardsEffect: {
+                // ...
+            },
+        });
+    </script>
 
 </body>
 </html>
