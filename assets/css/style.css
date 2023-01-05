@@ -193,3 +193,77 @@ body {
     padding: 4em 0 2em;
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    .apresentacao {
+        width: 100vw;
+        margin: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box ;
+    }
+    
+    .apresentacao__esquerda {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+    
+    .apresentacao__imagem-esquerda {
+        width: 70%;
+    }
+
+    .apresentacao__direita {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apresentacao__titulo-direita {
+        margin: 0 .8em .5em;
+        font-size: 3em;
+        font-weight: 600;
+    }
+    
+    .apresentacao__titulo-direita span {
+        color: #50000D;
+    }
+    
+    .apresentacao__texto-direita {
+        margin: 1em 1em 0;
+        font-size: 1.2rem;
+    }
+
+
+
+    .certificados {
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+    }
+    
+    .swiper {
+        width: 70%;
+        height: 400px;
+        margin: 0;
+      }
+    
+    .titulo-secundario {
+        text-align: center;   
+        margin: 1em 0 .5em;
+        font-weight: 500;
+        font-size: 3em;
+    }
+    
+    .titulo__texto {
+        font-size: 3em;
+    }
+}
